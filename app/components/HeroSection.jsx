@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
@@ -7,11 +7,11 @@ const HeroSection = () => {
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold md:h-[200px] h-[125px]">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
               Hello, I&apos;m
-              </span> 
-            <br/>
+            </span>
+            <br />
             <TypeAnimation
               sequence={["Gaurav", 1000, "Backend Developer", 1000]}
               wrapper="span"
@@ -25,18 +25,17 @@ const HeroSection = () => {
             developing and implementing applications in Java using Spring boot
           </p>
           <div>
-            <button className="bg-gradient-to-br from-blue-500 to-cyan-500 px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black mt-3">
-            <a href="#contact">
-               Hire Me
-                </a>
-              
+            <button className="bg-gradient-to-br from-blue-500 to-cyan-500 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black mt-3">
+              <a href="#contact" className="w-full flex justify-center px-6 py-3">
+                Hire Me
+              </a>
             </button>
             <button className="bg-gradient-to-br from-blue-500 to-cyan-500 px-1 py-1 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white  mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                <a href="/resume.pdf" target="_blank">
-                Download CV
-                </a>
+              <a href="/Gaurav_Ranjan_Resume.pdf" target="_blank">
+                <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                  Download CV
                 </span>
+              </a>
             </button>
           </div>
         </div>
